@@ -32,11 +32,13 @@
         <!-- Jumbotron -->
         <div class="row" id="header">
             <div class="col-lg-4">
-                <img src="img/logo.png" id="logo">
+                <a href="http://blueprint.hackmit.org/">
+                    <img src="img/logo.png" id="logo">
+                </a>
             </div>
             <div class="col-lg-4" style="margin-top:25px">
-                <h4 style="margin:0">Time remaining:</h4>
-                <div id="countdown"></div>
+                <h4 style="margin:0">Build time remaining:</h4>
+                <!-- <div id="countdown"></div> -->
             </div>
             <div class="col-lg-4">
                 <div id="current_time"><i class="fa fa-clock-o"></i>
@@ -96,12 +98,6 @@
                             </td>
                             <td>Closing &amp; awards ceremony (<a href="http://www.youtube.com/watch?v=v_GckMvRais">livestream</a>)</td>
                         </tr>
-                        <tr>
-                            <td>
-                                <strong>10:30PM</strong>
-                            </td>
-                            <td>End</td>
-                        </tr>
 
                     </tbody>
                 </table>
@@ -139,9 +135,10 @@
         </div>
 
         <div class="row">
-        <div class="col-lg-12" id="quotes">
-        <h3>Running a hackathon is easy, right?</h3><p>&mdash; Michael Holachek</p>
-        </div>
+            <div class="col-lg-12" id="quotes">
+                <h3>http://blueprint.hackmit.org/dayof/</h3>
+                <!-- <p>&mdash; Michael Holachek</p> -->
+            </div>
         </div>
 
 
@@ -153,9 +150,6 @@
     <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script>
-    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-    </script>
-    <script>
     $('#countdown').countdown({
         until: new Date(2014, 1, 22),
         format: "HMS"
@@ -165,13 +159,6 @@
         // Format integers to have at least two digits.
         return n < 10 ? '0' + n : n;
     }
-    setInterval(function() {
-        setCurrentTime();
-    }, 1000);
-
-    setInterval(function() {
-        loadAnnouncements();
-    }, 500);
 
     function loadAnnouncements() {
         $("#an").load("http://staging.holachek.com/BlueprintAnnounce.log");
@@ -183,6 +170,9 @@
         if (currentTime.getHours() < 12) {
             var currentTimeOfDay = " AM";
             var hours = currentTime.getHours();
+        } else if (currentTime.getHours() == 12) {
+            var currentTimeOfDay = " PM";
+            var hours = 12;
         } else {
             var currentTimeOfDay = " PM";
             var hours = currentTime.getHours() - 12;
@@ -194,6 +184,30 @@
 
     loadAnnouncements();
     setCurrentTime();
+
+    setInterval(function() {
+        setCurrentTime();
+    }, 1000);
+
+    setInterval(function() {
+        loadAnnouncements();
+    }, 5000);
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-46696390-1', 'hackmit.org');
+    ga('send', 'pageview');
     </script>
 </body>
 
