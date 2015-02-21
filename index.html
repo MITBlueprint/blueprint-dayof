@@ -1,236 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Blueprint Day Of</title>
+  <link rel="icon" type="image/png" href="/assets/img/bp-logo-favicon.png">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Rokkitt:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+  <!-- Include Semantic-UI -->
+  <script src="/assets/js/semantic.min.js"></script>
+  <link href="/assets/css/semantic.min.css" rel="stylesheet" type="text/css">
 
-    <title>Blueprint Day-of Updates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/3.1.0/yeti/bootstrap.min.css">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/jquery.countdown.css">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <script src="/assets/js/base.js"></script>
 </head>
 
 <body>
 
-    <div class="container">
-
-        <!-- Jumbotron -->
-        <div class="row" id="header">
-            <div class="col-lg-4 col-sm-2 col-xs-6">
-                <a href="http://blueprint.hackmit.org/">
-                    <img src="img/logo.png" id="logo">
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-6" style="margin-top:25px">
-                <h4 style="margin:0">Build time remaining:</h4>
-                <div id="countdown"></div>
-            </div>
-            <div class="col-lg-4 col-sm-4 hidden-xs">
-                <div id="current_time"><i class="fa fa-clock-o"></i>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Example row of columns -->
-        <div class="row">
-
-            <div class="col-lg-4 col-sm-6">
-                <h2>Schedule</h2>
-
-                <table id="schedule">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <strong>8AM</strong>
-                            </td>
-                            <td>Check-in &amp; breakfast</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>9AM</strong>
-                            </td>
-                            <td>Kickoff ceremony (<a href="http://www.youtube.com/watch?v=_kp75AARMyI">livestream</a>)</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>9:30AM</strong>
-                            </td>
-                            <td>Building starts
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong class="text-danger">11AM</strong>
-                            </td>
-                            <td class="text-danger"><a href="https://techx.wufoo.com/forms/hackmit-blueprint-team-formation/">Team submission</a> deadline
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>12PM</strong>
-                            </td>
-                            <td>Lunch &amp; optional walk around MIT campus
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>3PM</strong>
-                            </td>
-                            <td>Afternoon snack</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>6PM</strong>
-                            </td>
-                            <td>Dinner</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong class="text-danger">8:30PM</strong>
-                            </td>
-                            <td>Coding stops, judging starts</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>9:30PM</strong>
-                            </td>
-                            <td><a href="http://resonance.mit.edu/">Resonance</a> a capella concert</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>10PM</strong>
-                            </td>
-                            <td>Closing &amp; awards ceremony (<a href="http://www.youtube.com/watch?v=v_GckMvRais">livestream</a>)</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
-                <h5 style="padding-top: 20px">Looking for the <a href="https://docs.google.com/spreadsheet/ccc?key=0Ag1bYpqZ5dVodEFFR0oxXzdxU2VTeXdBSXViaWlXOGc&usp=sharing">workshop schedule</a>?</h5>
-
-            </div>
-
-
-            <div class="col-lg-6 col-sm-6">
-                <h2>Announcements</h2>
-                <div id="an"></div>
-            </div>
-
-
-
-
-            <div class="col-lg-1 col-sm-12">
-                <h2>Twitter</h2>
-                <a class="twitter-timeline" href="https://twitter.com/search?q=%23MITBlueprint" data-widget-id="435139846718234624">Tweets about "#MITBlueprint"</a>
-                <script>
-                ! function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0],
-                        p = /^http:/.test(d.location) ? 'http' : 'https';
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = p + "://platform.twitter.com/widgets.js";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, "script", "twitter-wjs");
-                </script>
-
-
-            </div>
-
-        </div>
-
-
+<div class="ui page dimmer">
+  <div class="content">
+    <div class="center">
+      <h1></h1>
+      <h2></h2>
     </div>
-    <!-- /container -->
+  </div>
+</div>
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
-    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script>
-    function f(n) {
-        // Format integers to have at least two digits.
-        return n < 10 ? '0' + n : n;
-    }
+<div class="nav">
+  <div class="ui secondary pointing menu">
+    <a class="logo montserrat bold item" href="//blueprint.hackmit.org">
+      <img class="bpsquare" src="/assets/img/blueprint-logo.svg"> BLUEPRINT
+    </a>
+    <a class="item active" href="/">
+      <i class="home icon"></i>
+      General Information
+    </a>
+    <a class="item" href="/learnathon/">
+      <i class="book icon"></i>
+      Learnathon
+    </a>
+    <a class="item" href="/hackathon/">
+      <i class="terminal icon"></i>
+      Hackathon
+    </a>
+  </div>
+</div>
 
-    function loadAnnouncements() {
-        $("#an").load("http://staging.holachek.com/BlueprintAnnounce.log");
-    }
+<div id="banner1" class="banner">
+  <div class="content">
+    Welcome to Blueprint!
+  </div>
+</div>
 
-    function setCurrentTime() {
-        var currentTime = new Date();
+<div id="home" class="main">
+  <div class="ui stackable page grid">
+    <div id="info-column" class="ten wide column">
+      <div class="ui segment top attached inverted">
+        <h1>General Information</h1>
+      </div>
+      <div class="ui segment bottom attached">
+        <h3> Questions? </h3>
+        <p>
+          If you have questions, ask us - we're friendly! Find a staff member, call <a href="tel:+1224900BLUE">224-900-BLUE</a> to chat with a Blueprint Organizer, or send us an email at <a href="mailto:blueprint@hackmit.org">blueprint@hackmit.org</a>! We're happy to help. In the case of an emergency, call the MIT Police at <a href="tel:+16172531212">617-253-1212</a>.
+        </p>
+        <h3> Security Policy </h3>
+        <p>
+          <em>Blueprint would not be possible without MIT’s support</em>, so we ask that you respect all university property and stay within designated areas.
+        </p>
+        <p>
+          For the learnathon, this means that you must stay on Stata’s first floor, and for the hackathon, this means that you must stay on the Media Lab’s sixth floor. You can’t leave the building without checking out at the help desk.
+        </p>
+        <p>
+          Once you leave this area, you won’t be allowed back in unless your parent has emailed us before the event granting you permission to wander off. Your mentors will be taking attendance throughout the day, so we will be informed of your absence.
+        </p>
+        <h3> Laptop Rental </h3>
+        <p>
+          If you’d like to rent a laptop, come to the Help Desk and check one out. You’ll need to return this by the end of the day on both days.
+        </p>
+      </div>
+    </div>
+    <div id="links-column" class="six wide column">
+      <div class="ui segment top attached inverted">
+        <h1>Important Links</h1>
+      </div>
+      <div class="ui segment bottom attached">
+        <h3> Event Links </h3>
+        <div class="ui link list">
+          <a class="item" href="//blueprint.hackmit.org">
+            <i class="home icon"></i>
+            <div class="content">
+              Homepage
+            </div>
+          </a>
+          <a class="item" href="//blueprintq.meteor.com">
+            <i class="doctor icon"></i>
+            <div class="content">
+              Mentor Queue
+            </div>
+          </a>
+          <div class="item" href="//blueprint.hackmit.org/submit">
+            <i class="checkered flag icon"></i>
+            <div class="content">
+              Project Submission
+            </div>
+          </div>
+        </div>
+        <h3> Contact </h3>
+        <div class="ui link list">
+          <a class="item" href="tel:+1224900BLUE">
+            <i class="phone icon"></i>
+            <div class="content">
+              (224) 900-BLUE
+            </div>
+          </a>
+          <a class="item" href="mailto:blueprint@hackmit.org">
+            <i class="mail icon"></i>
+            <div class="content">
+              blueprint@hackmit.org
+            </div>
+          </a>
+          <a class="item" href="//ist.mit.edu/mit-mobile/android-ios">
+            <i class="tablet icon"></i>
+            <div class="content">
+              MIT Mobile App
+            </div>
+          </a>
+        </div>
+        <h3> Emergency </h3>
+          <div class="horizontal list">
+            <a class="ui basic labeled icon button" href="tel:617-253-1212">
+              MIT Police - (617) 253-1212
+              <i class="medkit icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-        if (currentTime.getHours() < 12) {
-            var currentTimeOfDay = " AM";
-            var hours = currentTime.getHours();
-        } else if (currentTime.getHours() == 12) {
-            var currentTimeOfDay = " PM";
-            var hours = 12;
-        } else {
-            var currentTimeOfDay = " PM";
-            var hours = currentTime.getHours() - 12;
-        }
-
-        var formatString = "<h3 style='font-weight:500'>" + hours + ":" + f(currentTime.getMinutes()) + currentTimeOfDay + "</h3>";
-        $('#current_time div').html(formatString);
-    }
-
-    loadAnnouncements();
-    setCurrentTime();
-
-    setInterval(function() {
-        setCurrentTime();
-
-        var nowTime = new Date();
-        var startTime = Date.parse("February 22, 2014 09:30")
-        if (nowTime.getTime() > startTime) {
-            $('#countdown').countdown({
-                until: new Date(2014, 1, 22, 20, 30),
-                format: "HMS"
-            });
-        } else {
-            $('#countdown').html('<h3 style="color:#ddd">starts at 9:30AM Saturday</h3>')
-        }
-
-    }, 1000);
-
-    setInterval(function() {
-        loadAnnouncements();
-    }, 5000);
-    </script>
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-46696390-1', 'hackmit.org');
-    ga('send', 'pageview');
-    </script>
 </body>
-
 </html>
