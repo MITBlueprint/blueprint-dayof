@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  {{> shared_header }}
+
+  <!-- events data -->
+  <script src="../assets/js/events.js"></script>
+
+  {{> semantics_ui }}
+
+  {{> meta_fb}}
+
+  {{> meta_tw}}
+
+  {{> ga context=gaContext }}
+
+  {{> meta_viewport}}
+
+  <script src="../assets/js/base.js"></script>
+</head>
+
+<body>
+
+{{> pageDimmer }}
+
+
+{{> nav context=navContext }}
+
+
+{{> banner context=bannerContext }}
+
+<div class="main">
+  <div class="ui stackable two column page grid">
+    {{#each events}}
+    <div class="column">
+      <div class="ui header">
+        {{@key}}
+      </div>
+      <table class="ui table segment">
+        <thead><tr>
+          <th>Start</th>
+          <th>End</th>
+          <th>Event</th>
+          <th>Location</th>
+        </tr></thead>
+        <tbody>
+          {{#each this}}
+          <tr>
+            <td class="active" colspan="4">{{@key}}</td>
+          </tr>
+            {{#each this.events}}
+            <tr>
+              <td>{{arrayElemToTimeWithFormat this 0 "h:mm tt"}}</td>
+              <td>{{arrayElemToTimeWithFormat this 1 "h:mm tt"}}</td>
+              <td>{{arrayElem this 2}}</td>
+              <td>{{arrayElem this 3}}</td>
+            </tr>
+            {{/each}}
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

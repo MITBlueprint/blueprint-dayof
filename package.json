@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "bundlebars": "^1.2.0"
+    "bundlebars": "^1.2.0",
+    "helpers": "./node_modules_internal/helpers"
   },
   "private" : true
 }

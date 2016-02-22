@@ -63,7 +63,7 @@ var HackMITCurrentEvents = (function() {
   }
 
   function getEventsContainingT(t) {
-    return HMIT_EVTS.filter(function(evt) {
+    return EVTS.filter(function(evt) {
       return evt[0] - FUDGE <= t && evt[1] >= t;
     });
   }

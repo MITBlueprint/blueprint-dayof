@@ -47,56 +47,13 @@
 
 <body>
 
-<div class="ui page dimmer">
-  <div class="content">
-    <div class="center">
-      <h1></h1>
-      <h2></h2>
-    </div>
-  </div>
-</div>
+{{> pageDimmer }}
 
-<div class="nav">
-  <div class="ui secondary pointing menu">
-    <a class="logo montserrat bold item" href="//hackmit.org">
-      <img class="hacksquare" src="../assets/img/hack-logo-black.png"> HACKMIT
-    </a>
-    <a class="item" href="../">
-      <i class="home icon"></i>
-      Day Of
-    </a>
-    <a class="item" href="../maps/">
-      <i class="map icon"></i>
-      Maps
-    </a>
-    <a class="item" href="../schedule/">
-      <i class="calendar icon"></i>
-      Schedule
-    </a>
-    <a class="item" href="../prizes/">
-      <i class="trophy icon"></i>
-      Sponsor Prizes
-    </a>
-    <a class="item" href="../hardware/">
-      <i class="rocket icon"></i>
-      Hardware List
-    </a>
-    <a class="item" href="../travel/">
-      <i class="plane icon"></i>
-      Travel Info
-    </a>
-    <a class="item active" href="../faq/">
-      <i class="question icon"></i>
-      FAQs
-    </a>
-  </div>
-</div>
 
-<div id="banner">
-  <div class="content">
-    FAQs
-  </div>
-</div>
+{{> nav context=navContext }}
+
+
+{{> banner context=bannerContext }}
 
 <div class="main width-limiter message-center">
   <div class="ui message">
