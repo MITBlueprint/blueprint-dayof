@@ -17,8 +17,22 @@ Feature branches will come and go from `master`, and for deploys `master` will b
 Testing
 -------
 
-1. Run an HTTP Server
+1. Make sure you have node installed.
+
+2. Install packages
+	- `cd` into the root directory of the project and run `npm install`
+
+3. Compile templates
+	- `cd` into the root directory of the project and run `make compile`
+
+4. Run an HTTP Server
 	- Python 2: `cd` into the root directory of the project and run `python -m SimpleHTTPServer`.
 	- Python 3: `cd` into the root directory of the project and run `python3 -m http.server`.
-2. Direct your browser to `http://localhost:8000/` to see the site.
 
+5. Direct your browser to `http://localhost:8000/` to see the site.
+
+Before pushing
+--------------
+
+If you want to remove all files created by the `make compile` command
+	- `cd` into the root directory of the project and run `make rmCompiled`
