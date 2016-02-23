@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+  <meta charset="UTF-8">
+  <title>HackMIT Day Of Info</title>
+  <link rel="icon"
+        type="image/png"
+        href="./assets/img/hack-logo-favicon-2015.png">
+  <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link href="./assets/css/main.css" rel="stylesheet" type="text/css">
+
+  <!-- events data -->
+  <script src="../assets/js/events.js"></script>
+
+  <!-- current events logic -->
+  <script src="../assets/js/current_events.js"></script>
+
+  <!-- Include Semantic-UI -->
+  <script src="./assets/js/semantic.min.js"></script>
+  <link href="./assets/css/semantic.min.css" rel="stylesheet" type="text/css">
+
+  <!-- for Facebook -->
+  <meta property="og:title" content="HACKMIT 2015"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="assets/img/hack-logo-fb.png"/>
+  <meta property="og:url" content="http://hackmit.org"/>
+  <meta property="og:description" content="HackMIT Day Of Information"/>
+
+  <!-- for Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@hackmit">
+  <meta name="twitter:title" content="HACKMIT 2015">
+  <meta name="twitter:description" content="Get ready for a hackathon like none other. Sep 19-20, MIT.">
+  <meta name="twitter:image:src" content="assets/img/hack-logo-fb.png"/>
+
+  <!-- ga -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', "", 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../assets/js/base.js"></script>
+</head>
+
+<body>
+
+<div class="ui page dimmer">
+  <div class="content">
+    <div class="center">
+      <h1></h1>
+      <h2></h2>
+    </div>
+  </div>
+</div>
+
+<div class="nav">
+  <div class="ui secondary pointing menu">
+    <a class="logo montserrat bold item" href="//hackmit.org">
+      <img class="hacksquare" src="./assets/img/hack-logo-black.png"> HACKMIT
+    </a>
+    <a class="item active" href="././">
+      <i class="home icon"></i>
+      Day Of
+    </a>
+    <a class="item " href="./maps">
+      <i class="map icon"></i>
+      Getting Here
+    </a>
+    <a class="item " href="./schedule">
+      <i class="calendar icon"></i>
+      Schedule
+    </a>
+    <a class="item " href="./prizes">
+      <i class="trophy icon"></i>
+      Prizes
+    </a>
+    <a class="item " href="./food">
+      <i class="question icon"></i>
+      Food
+    </a>
+    <a class="item " href="./learnathon">
+      <i class="question icon"></i>
+      Learnathon
+    </a>
+    <a class="item " href="./live">
+      <i class="question icon"></i>
+      Live Announements
+    </a>
+    <a class="item " href="./conduct">
+      <i class="question icon"></i>
+      Code of Conduct
+    </a>
+    <a class="item " href="./faq">
+      <i class="question icon"></i>
+      FAQs
+    </a>
+    <a class="item " href="./judging">
+      <i class="question icon"></i>
+      Judging
+    </a>
+    <a class="item " href="./contact">
+      <i class="question icon"></i>
+      Contact
+    </a>
+  </div>
+</div>
+
+<div id="banner">
+  <div class="content">
+  	WELCOME TO BLUEPRINT
+  </div>
+</div>
+
+<div id="home" class="main">
+  <div class="ui stackable page grid">
+    <div class="sixteen wide column" id="current-events-cont"
+         style="display: none !important;">
+      <table class="ui table segment current-events-table">
+        <tbody id="current-events-tbody">
+          <tr>
+            <td class="active current-events" colspan="4">
+              <h1>Current events</h1>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="links-column" class="eight wide column">
+      <div class="ui segment top attached inverted">
+        <h1>Important Info</h1>
+      </div>
+      <div class="ui segment bottom attached">
+        <h3>
+          Wifi:
+          <div class="ui label" style="text-transform: none">much-internet</div>
+        </h3>
+        <h3> Event Links </h3>
+        <div class="ui link list">
+          <a class="item" href="http://q.hackmit.org">
+            <i class="help icon"></i>
+            <div class="content">
+              Mentor Queue
+            </div>
+          </a>
+          <a class="item" href="//go.hackmit.org/helpdesk">
+            <i class="comment icon"></i>
+            <div class="content">
+              HackMIT Helpdesk
+            </div>
+          </a>
+          <a class="item" href="//apis.hackmit.org">
+            <i class="settings icon"></i>
+            <div class="content">
+              API Directory
+            </div>
+          </a>
+          <a class="item" href="//go.hackmit.org/submit">
+            <i class="legal icon"></i>
+            <div class="content">
+              Submit project
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="contacts-column" class="eight wide column">
+      <div class="ui segment top attached inverted">
+        <h1>Contact</h1>
+      </div>
+      <div class="ui segment bottom attached">
+      <div class="ui link list">
+        <a class="item" href="tel:774-290-4225">
+          <i class="phone icon"></i>
+          <div class="content">
+            (774) 290-HACK
+          </div>
+        </a>
+        <a class="item" href="mailto:team@hackmit.org">
+          <i class="mail icon"></i>
+          <div class="content">
+            team@hackmit.org
+          </div>
+        </a>
+        <a class="item" href="//ist.mit.edu/mit-mobile/android-ios">
+          <i class="tablet icon"></i>
+          <div class="content">
+            MIT Mobile App
+          </div>
+        </a>
+      </div>
+
+      <h3> Social Media </h3>
+      <a class="ui facebook button" href="//facebook.com/HackMIT">
+        <i class="facebook icon"></i>
+        Facebook
+      </a>
+      <a class="ui twitter button" href="//twitter.com/hackmit">
+        <i class="twitter icon"></i>
+        Twitter
+      </a>
+      <a class="ui instagram button" href="//instagram.com/hackmit/">
+        <i class="instagram icon"></i>
+        Instagram
+      </a>
+
+        <h3> Emergency </h3>
+        <div class="horizontal list">
+          <a class="ui basic labeled icon button" href="tel:617-253-1212">
+            MIT Police - (617) 253-1212
+            <i class="medkit icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
