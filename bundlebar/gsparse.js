@@ -1,70 +1,41 @@
 var request = require('request');
 var fs = require('fs');
 
-var DATA_DIRECTORY = 'gsdata/'
-var options = {
-	'keys' : [{
-		'name' : 'place',
-		'allowEmpty' : false
-	},{
-		'name' : 'prize',
-		'allowEmpty' : false
-	}]
+function GSParse() {}
+
+GSParse.config = {};
+
+GSParse.setConfig = function(config){
+	this.config = config;
 }
 
-var prizeSheetInfo = {
-	'gid' : '1VZBvhq-4vkq_W6qzTsay_WnRcbui64KXtDX5lC6DWGo',
-	'options' : {
-		'keys' : [{
-			'name' : 'place',
-			'allowEmpty' : false
-		},{
-			'name' : 'prize',
-			'allowEmpty' : false
-		}]
+GSParse.run = function(){
+	var config = this.config;
+	if (typeof config.inputs !== 'undefined') {
+		//Batch processing
+		var inputs = config.inputs;
+		inputs.forEach(function(fileName){
+			var filePath = config.input_dir + fileName;
+			var requestInfo = require(filePath);
+			if (typeof requestInfo.outputFile == 'undefined') {
+				requestInfo.outputFile = fileName;
+			}
+			loadFromSheetsToFile(requestInfo);
+		});
+	} else {
+		//Single processing
+		//Currently not supported
 	}
 }
-
-var scheduleOptions = {
-	'keys' : [{
-		'name' : 'start',
-		'allowEmpty' : false
-	},{
-		'name' : 'end',
-		'allowEmpty' : true
-	},{
-		'name' : 'event',
-		'allowEmpty' : true
-	},{
-		'name' : 'location',
-		'allowEmpty' : true
-	}]
-}
-
-var scheduleSheetInfo = {
-	'gid' : '19NAcIAJ0wCLQ-l7Pzp0i63wpSPCl0pL-rtsuWvfIbMI',
-	'filepath' : 'schedules.js',
-	'options' : {
-		'groupInfo' : {
-			'groups' : [{
-				'key' : 'learnathon',
-				'columns' : 5,
-				'options' : scheduleOptions
-			},{
-				'key' : 'hackathon',
-				'columns' : 5,
-				'options' : scheduleOptions
-			}]
-		}
-	}
-}
-
-var DATA_PREPEND = 'module.exports = ';
 
 function loadFromSheetsToFile(info){
+	var config = GSParse.config;
+	var DATA_DIRECTORY = config.output_dir;
+	var DATA_PREPEND = config.prepend;
 	loadFromSheets(info, function(data){
-		var filePath = DATA_DIRECTORY + info.filepath;
-		var writeData = DATA_PREPEND + JSON.stringify(data);
+		var outputFile = info.outputFile;
+		var filePath = DATA_DIRECTORY + outputFile;
+		var writeData = DATA_PREPEND + JSON.stringify(data, null, "\t");
 		fs.writeFile(filePath, writeData, (err) => {
 		  if (err) {
 		  	console.log(err);
@@ -179,5 +150,4 @@ function processResponse(items, options) {
 	}
 }
 
-loadFromSheetsToFile(scheduleSheetInfo);
-// https://spreadsheets.google.com/feeds/list/1VZBvhq-4vkq_W6qzTsay_WnRcbui64KXtDX5lC6DWGo/1/public/values?alt=json
+module.exports = GSParse;
