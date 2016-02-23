@@ -1,34 +1,48 @@
 module.exports = {
 	"items" : [{
-			"href" : "",
+			"href" : "./",
 			"iconClass" : "home",
 			"displayName" : "Day Of"
 		},{
 			"href" : "maps",
 			"iconClass" : "map",
-			"displayName" : "Maps"
+			"displayName" : "Getting Here"
 		},{
 			"href" : "schedule",
 			"iconClass" : "calendar",
 			"displayName" : "Schedule"
-		},
-		{
+		},{
 			"href" : "prizes",
 			"iconClass" : "trophy",
-			"displayName" : "Sponsor Prizes"
+			"displayName" : "Prizes"
 		},{
-			"href" : "hardware",
-			"iconClass" : "rocket",
-			"displayName" : "Hardware List"
-		},
-		{
-			"href" : "travel",
-			"iconClass" : "plane",
-			"displayName" : "Travel Info"
+			"href" : "food",
+			"iconClass" : "question",
+			"displayName" : "Food"
+		},{
+			"href" : "learnathon",
+			"iconClass" : "question",
+			"displayName" : "Learnathon"
+		},{
+			"href" : "live",
+			"iconClass" : "question",
+			"displayName" : "Live Announements"
+		},{
+			"href" : "conduct",
+			"iconClass" : "question",
+			"displayName" : "Code of Conduct"
 		},{
 			"href" : "faq",
 			"iconClass" : "question",
 			"displayName" : "FAQs"
+		},{
+			"href" : "judging",
+			"iconClass" : "question",
+			"displayName" : "Judging"
+		},{
+			"href" : "contact",
+			"iconClass" : "question",
+			"displayName" : "Contact"
 		}
 	]
 };

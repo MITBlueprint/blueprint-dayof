@@ -1,13 +1,23 @@
 var extData = {
-	'navContext' : 'partials/nav_data.js'
+	'navContext' : 'partials/nav_data.js',
+	'gaContext' : 'partials/ga_data.js'
 }
+
+var APP_DIR = './';
 
 var intData = {
   navContext : {
-    'selectedIndex' : 0
+    'selectedDirectory' : APP_DIR,
+    'applicationDirectory' : APP_DIR
   },
   bannerContext : {
-  	'bannerName' : 'WELCOME TO HACKMIT'
+  	'bannerName' : 'WELCOME TO BLUEPRINT'
+  },
+  semanticsContext : {
+  	'applicationDirectory' : APP_DIR
+  },
+  headerContext : {
+  	'applicationDirectory' : APP_DIR
   }
 }
 

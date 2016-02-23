@@ -11,6 +11,7 @@
  */
 
 var COMPILE_INFO = [
+	["index.hbs"],
   ["schedule/index.hbs"],
   ["maps/index.hbs"],
   ["prizes/index.hbs"],

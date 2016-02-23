@@ -50,7 +50,7 @@ function writeToFileFunction(filePath){
 		  	console.log(err);
 		  	throw err;
 		  }
-		  console.log("good")
+		  console.log("Generated " + filePath)
 		});
 	}
 }

@@ -65,6 +65,15 @@
     </p>
   </div>
   <div class="ui fluid accordion" id="faq-accordion">
+    {{#each faqs}}
+    <div class="title">
+      <i class="dropdown icon"></i>
+      {{this.title}}
+    </div>
+    <div class="content">
+    {{this.content}}
+    </div>
+    {{/each}}
     <div class="title">
       <i class="dropdown icon"></i>
       How do I connect to wifi?

@@ -1,10 +1,10 @@
 <div class="nav">
   <div class="ui secondary pointing menu">
     <a class="logo montserrat bold item" href="//hackmit.org">
-      <img class="hacksquare" src="../assets/img/hack-logo-black.png"> HACKMIT
+      <img class="hacksquare" src="{{context.applicationDirectory}}assets/img/hack-logo-black.png"> HACKMIT
     </a>
     {{#each context.items}}
-    <a class="item {{addIfEq this.href ../context.selectedDirectory 'active'}}" href="../{{this.href}}">
+    <a class="item {{addIfEq this.href ../context.selectedDirectory 'active'}}" href="{{../context.applicationDirectory}}{{this.href}}">
       <i class="{{this.iconClass}} icon"></i>
       {{this.displayName}}
     </a>

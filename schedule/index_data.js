@@ -6,12 +6,21 @@ var extData = {
 
 var helpers = require('helpers');
 
+var APP_DIR = '../';
+
 var intData = {
   navContext : {
-    'selectedDirectory' : helpers.currentDirectory(__dirname)
+    'selectedDirectory' : helpers.currentDirectory(__dirname),
+    'applicationDirectory' : APP_DIR
   },
   bannerContext : {
   	'bannerName' : 'Schedule'
+  },
+  semanticsContext : {
+  	'applicationDirectory' : APP_DIR
+  },
+  headerContext : {
+  	'applicationDirectory' : APP_DIR
   }
 }
 
