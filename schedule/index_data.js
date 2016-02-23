@@ -1,6 +1,6 @@
 var extData = {
 	'navContext' : 'partials/nav_data.js',
-	'events' : 'assets/js/events.js',
+	'events' : 'gsdata/schedules.js',
 	'gaContext' : 'partials/ga_data.js'
 }
 

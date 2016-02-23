@@ -46,6 +46,36 @@
         <tbody>
           {{#each this}}
           <tr>
+            <td>{{this.start}}</td>
+            <td>{{this.end}}</td>
+            <td>{{this.event}}</td>
+            <td>{{this.location}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+    {{/each}}
+  </div>
+</div>
+{{!-- 
+<div class="main">
+  <div class="ui stackable two column page grid">
+    {{#each events}}
+    <div class="column">
+      <div class="ui header">
+        {{@key}}
+      </div>
+      <table class="ui table segment">
+        <thead><tr>
+          <th>Start</th>
+          <th>End</th>
+          <th>Event</th>
+          <th>Location</th>
+        </tr></thead>
+        <tbody>
+          {{#each this}}
+          <tr>
             <td class="active" colspan="4">{{@key}}</td>
           </tr>
             {{#each this.events}}
@@ -62,7 +92,7 @@
     </div>
     {{/each}}
   </div>
-</div>
+</div> --}}
 
 <br>
 <br>

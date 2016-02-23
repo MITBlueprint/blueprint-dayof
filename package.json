@@ -1,7 +1,10 @@
 {
   "dependencies": {
     "bundlebars": "^1.2.0",
-    "helpers": "./node_modules_internal/helpers"
+    "google-spreadsheet-to-json": "^0.1.5",
+    "helpers": "./node_modules_internal/helpers",
+    "http": "0.0.0",
+    "request": "^2.69.0"
   },
-  "private" : true
+  "private": true
 }
