@@ -1,5 +1,5 @@
 module.exports = {
-	"learnathon": [
+	"Learnathon": [
 		{
 			"start": "9:00 AM",
 			"end": "9:30 AM",
@@ -79,7 +79,7 @@ module.exports = {
 			"location": "32-123"
 		}
 	],
-	"hackathon": [
+	"Hackathon": [
 		{
 			"start": "7:00 AM",
 			"end": "7:30 AM",

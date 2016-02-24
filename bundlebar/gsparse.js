@@ -1,5 +1,6 @@
 var request = require('request');
 var fs = require('fs');
+var helpers = require('helpers')
 
 function GSParse() {}
 
@@ -17,8 +18,19 @@ GSParse.run = function(){
 		inputs.forEach(function(fileName){
 			var filePath = config.input_dir + fileName;
 			var requestInfo = require(filePath);
-			if (typeof requestInfo.outputFile == 'undefined') {
-				requestInfo.outputFile = fileName;
+			if (typeof requestInfo.output_url == 'undefined') {
+				if (typeof config.output_dir !== 'undefined') {
+					//No file level output but found output directory in config
+					requestInfo.output_url = config.output_dir + helpers.currentFileName(filePath) + '.js';
+				} else {
+					console.log('No output could be resolved for input file at ' + filePath);
+				}
+			}
+			if (typeof requestInfo.prepend == 'undefined') {
+				if (typeof config.prepend !== 'undefined') {
+					//If there was prepend info in config pass it down unless if it has prepend info already
+					requestInfo.prepend = config.prepend;
+				}
 			}
 			loadFromSheetsToFile(requestInfo);
 		});
@@ -30,12 +42,12 @@ GSParse.run = function(){
 
 function loadFromSheetsToFile(info){
 	var config = GSParse.config;
-	var DATA_DIRECTORY = config.output_dir;
-	var DATA_PREPEND = config.prepend;
 	loadFromSheets(info, function(data){
-		var outputFile = info.outputFile;
-		var filePath = DATA_DIRECTORY + outputFile;
-		var writeData = DATA_PREPEND + JSON.stringify(data, null, "\t");
+		var filePath = info.output_url;
+		var writeData = JSON.stringify(data, null, "\t");
+		if (typeof info.prepend !== 'undefined') {
+			writeData = info.prepend + writeData;
+		}
 		fs.writeFile(filePath, writeData, (err) => {
 		  if (err) {
 		  	console.log(err);

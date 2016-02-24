@@ -16,15 +16,14 @@ var scheduleOptions = {
 
 var requestInfo = {
 	'gid' : '19NAcIAJ0wCLQ-l7Pzp0i63wpSPCl0pL-rtsuWvfIbMI',
-	'filepath' : 'schedules.js',
 	'options' : {
 		'groupInfo' : {
 			'groups' : [{
-				'key' : 'learnathon',
+				'key' : 'Learnathon',
 				'columns' : 5,
 				'options' : scheduleOptions
 			},{
-				'key' : 'hackathon',
+				'key' : 'Hackathon',
 				'columns' : 5,
 				'options' : scheduleOptions
 			}]
