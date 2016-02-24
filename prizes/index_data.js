@@ -13,7 +13,7 @@ var intData = {
     'applicationDirectory' : APP_DIR
   },
   bannerContext : {
-  	'bannerName' : 'Prizes'
+  	'bannerName' : 'Judging & Prizes'
   },
   semanticsContext : {
   	'applicationDirectory' : APP_DIR
