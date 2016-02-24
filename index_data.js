@@ -36,6 +36,30 @@ var intData = {
     'href' : "//go.hackmit.org/submit",
     'icon' : 'legal',
     'content' : 'Submit project'    
+  }],
+  socialMedias : [{
+    'href' : "//facebook.com/mitblueprint",
+    'class' : 'facebook',
+    'iconClass' : 'facebook',
+    'displayText' : 'Facebook'
+  },{
+    'href' : "//twitter.com/mitblueprint",
+    'class' : 'twitter',
+    'iconClass' : 'twitter',
+    'displayText' : 'Twitter'
+  }],
+  contacts : [{
+    'href' : "tel:774-290-4225",
+    'iconClass' : 'phone',
+    'content' : '(774) 290-HACK'
+  },{
+    'href' : "mailto:blueprint@hackmit.org",
+    'iconClass' : 'mail',
+    'content' : 'blueprint@hackmit.org'
+  },{
+    'href' : "//ist.mit.edu/mit-mobile/android-ios",
+    'iconClass' : 'tablet',
+    'content' : 'MIT Mobile App'
   }]
 }
 

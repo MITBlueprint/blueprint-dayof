@@ -77,39 +77,23 @@
       </div>
       <div class="ui segment bottom attached">
       <div class="ui link list">
-        <a class="item" href="tel:774-290-4225">
-          <i class="phone icon"></i>
+        {{#each contacts}}
+        <a class="item" href="{{this.href}}">
+          <i class="{{this.iconClass}} icon"></i>
           <div class="content">
-            (774) 290-HACK
+            {{this.content}}
           </div>
         </a>
-        <a class="item" href="mailto:team@hackmit.org">
-          <i class="mail icon"></i>
-          <div class="content">
-            team@hackmit.org
-          </div>
-        </a>
-        <a class="item" href="//ist.mit.edu/mit-mobile/android-ios">
-          <i class="tablet icon"></i>
-          <div class="content">
-            MIT Mobile App
-          </div>
-        </a>
+        {{/each}}
       </div>
 
       <h3> Social Media </h3>
-      <a class="ui facebook button" href="//facebook.com/HackMIT">
-        <i class="facebook icon"></i>
-        Facebook
+      {{#each socialMedias}}
+      <a class="ui {{this.class}} button" href="{{this.href}}">
+        <i class="{{this.iconClass}} icon"></i>
+        {{this.displayText}}
       </a>
-      <a class="ui twitter button" href="//twitter.com/hackmit">
-        <i class="twitter icon"></i>
-        Twitter
-      </a>
-      <a class="ui instagram button" href="//instagram.com/hackmit/">
-        <i class="instagram icon"></i>
-        Instagram
-      </a>
+      {{/each}}
 
         <h3> Emergency </h3>
         <div class="horizontal list">
