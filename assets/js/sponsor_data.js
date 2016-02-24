@@ -4,41 +4,41 @@ var SPONSOR_PRIZE_DATA = [
 		"amount": "GoPro Hero",
 		"qty": "4.00",
 		"price": "$476.00",
-		"description": "a"
+		"description": ""
 	},
 	{
 		"title": "2nd Experienced",
 		"amount": "Pebble Classic",
 		"qty": "4.00",
 		"price": "$320.00",
-		"description": "b"
+		"description": ""
 	},
 	{
 		"title": "3rd Experienced",
 		"amount": "Parrot Rolling Spider Minidrones",
 		"qty": "4.00",
 		"price": "$280.00",
-		"description": "c"
+		"description": ""
 	},
 	{
 		"title": "1st Rookie",
 		"amount": "Fitbit Flex",
 		"qty": "4.00",
 		"price": "$320.00",
-		"description": "d"
+		"description": ""
 	},
 	{
 		"title": "2nd Rookie",
 		"amount": "LeapMotion",
 		"qty": "4.00",
 		"price": "248",
-		"description": "e"
+		"description": ""
 	},
 	{
 		"title": "3rd Rookie",
 		"amount": "Raspberry Pi Starter Kit",
 		"qty": "4.00",
 		"price": "$276.00",
-		"description": "f"
+		"description": ""
 	}
 ]

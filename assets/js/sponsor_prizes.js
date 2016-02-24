@@ -36,7 +36,9 @@ var SponsorPrizeViewGen = (function() {
     var p = document.createElement('p');
     p.innerHTML = descr;
     tiDiv.appendChild(h3);
-    tiDiv.appendChild(p);
+    if (typeof descr !== 'undefined') {
+      tiDiv.appendChild(p);
+    }
     div.appendChild(spDiv);
     div.appendChild(tiDiv);
     return div;

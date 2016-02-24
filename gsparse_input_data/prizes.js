@@ -17,7 +17,7 @@ var requestInfo = {
 			'allowEmpty' : true
 		},{
 			'name' : 'description',
-			'allowEmpty' : false
+			'allowEmpty' : true
 		}]
 	}
 }

@@ -55,34 +55,18 @@
       <div class="ui segment bottom attached">
         <h3>
           Wifi:
-          <div class="ui label" style="text-transform: none">much-internet</div>
+          <div class="ui label" style="text-transform: none">{{wifi}}</div>
         </h3>
         <h3> Event Links </h3>
         <div class="ui link list">
-          <a class="item" href="http://q.hackmit.org">
-            <i class="help icon"></i>
+          {{#each importantLinks}}
+          <a class="item" href="{{this.href}}">
+            <i class="{{this.icon}} icon"></i>
             <div class="content">
-              Mentor Queue
+              {{this.content}}
             </div>
           </a>
-          <a class="item" href="//go.hackmit.org/helpdesk">
-            <i class="comment icon"></i>
-            <div class="content">
-              HackMIT Helpdesk
-            </div>
-          </a>
-          <a class="item" href="//apis.hackmit.org">
-            <i class="settings icon"></i>
-            <div class="content">
-              API Directory
-            </div>
-          </a>
-          <a class="item" href="//go.hackmit.org/submit">
-            <i class="legal icon"></i>
-            <div class="content">
-              Submit project
-            </div>
-          </a>
+          {{/each}}
         </div>
       </div>
     </div>
