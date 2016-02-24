@@ -102,7 +102,7 @@ module.exports = {
 			"start": "8:00 AM",
 			"end": "9:00 AM",
 			"event": "Team formation",
-			"location": "???"
+			"location": ""
 		},
 		{
 			"start": "12:30 PM",
