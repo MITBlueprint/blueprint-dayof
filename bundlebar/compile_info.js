@@ -15,7 +15,9 @@ var COMPILE_INFO = [
   ["schedule/index.hbs"],
   ["maps/index.hbs"],
   ["prizes/index.hbs"],
-  ["faq/index.hbs"]
+  ["faq/index.hbs"],
+  ["learnathon/index.hbs"],
+  ["food/index.hbs"]
 ];
 
 module.exports = COMPILE_INFO;

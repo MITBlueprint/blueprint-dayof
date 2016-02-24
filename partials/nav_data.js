@@ -14,35 +14,19 @@ module.exports = {
 		},{
 			"href" : "prizes",
 			"iconClass" : "trophy",
-			"displayName" : "Prizes"
+			"displayName" : "Judging/Prizes"
 		},{
 			"href" : "food",
-			"iconClass" : "question",
+			"iconClass" : "food",
 			"displayName" : "Food"
 		},{
 			"href" : "learnathon",
-			"iconClass" : "question",
+			"iconClass" : "book",
 			"displayName" : "Learnathon"
-		},{
-			"href" : "live",
-			"iconClass" : "question",
-			"displayName" : "Live Announements"
-		},{
-			"href" : "conduct",
-			"iconClass" : "question",
-			"displayName" : "Code of Conduct"
 		},{
 			"href" : "faq",
 			"iconClass" : "question",
 			"displayName" : "FAQs"
-		},{
-			"href" : "judging",
-			"iconClass" : "question",
-			"displayName" : "Judging"
-		},{
-			"href" : "contact",
-			"iconClass" : "question",
-			"displayName" : "Contact"
 		}
 	]
 };

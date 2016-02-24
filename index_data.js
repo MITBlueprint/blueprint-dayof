@@ -18,7 +18,25 @@ var intData = {
   },
   headerContext : {
   	'applicationDirectory' : APP_DIR
-  }
+  },
+  wifi : 'MIT GUEST',
+  importantLinks : [{
+    'href' : "http://q.hackmit.org",
+    'icon' : 'help',
+    'content' : 'Mentor Queue'
+  },{
+    'href' : "//go.hackmit.org/helpdesk",
+    'icon' : 'comment',
+    'content' : 'HackMIT Helpdesk'
+  },{
+    'href' : "//apis.hackmit.org",
+    'icon' : 'settings',
+    'content' : 'API Directory'
+  },{
+    'href' : "//go.hackmit.org/submit",
+    'icon' : 'legal',
+    'content' : 'Submit project'    
+  }]
 }
 
 module.exports.extData = extData;

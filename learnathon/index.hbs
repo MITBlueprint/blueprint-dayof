@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  {{> shared_header context=headerContext}}
+
+  {{> semantics_ui context=semanticsContext}}
+
+  {{> meta_fb}}
+
+  {{> meta_tw}}
+
+  {{> ga context=gaContext }}
+
+  {{> meta_viewport}}
+
+  <script src="../assets/js/base.js"></script>
+</head>
+
+<body>
+
+{{> pageDimmer }}
+
+
+{{> nav context=navContext }}
+
+
+{{> banner context=bannerContext }}
+
+<div class="main">
+{{!--   <div class="ui stackable two column page grid">
+    {{#each events}}
+    <div class="column">
+      <div class="ui header">
+        {{@key}}
+      </div>
+      <table class="ui table segment">
+        <thead><tr>
+          <th>Start</th>
+          <th>End</th>
+          <th>Event</th>
+          <th>Location</th>
+        </tr></thead>
+        <tbody>
+          {{#each this}}
+          <tr>
+            <td>{{this.start}}</td>
+            <td>{{this.end}}</td>
+            <td>{{this.event}}</td>
+            <td>{{this.location}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+    {{/each}}
+  </div> --}}
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

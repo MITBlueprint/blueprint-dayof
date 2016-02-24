@@ -1,6 +1,5 @@
 var extData = {
 	'navContext' : 'partials/nav_data.js',
-	'events' : 'gsparse_output_data/schedules.js',
 	'gaContext' : 'partials/ga_data.js'
 }
 
@@ -14,7 +13,7 @@ var intData = {
     'applicationDirectory' : APP_DIR
   },
   bannerContext : {
-  	'bannerName' : 'Schedule'
+  	'bannerName' : 'Learnathon'
   },
   semanticsContext : {
   	'applicationDirectory' : APP_DIR
