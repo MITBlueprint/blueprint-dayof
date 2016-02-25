@@ -1,6 +1,7 @@
 var extData = {
 	'navContext' : 'partials/nav_data.js',
-	'gaContext' : 'partials/ga_data.js'
+	'gaContext' : 'partials/ga_data.js',
+  'prizeInfo' : 'gsparse_output_data/prizes.js' 
 }
 
 var helpers = require('helpers');

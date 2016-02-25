@@ -1,4 +1,4 @@
-var SPONSOR_PRIZE_DATA = {
+module.exports = {
 	"experienced": [
 		{
 			"title": "1st Experienced",
