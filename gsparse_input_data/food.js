@@ -8,6 +8,9 @@ var foodOptions = {
 	},{
 		'name' : 'description',
 		'allowEmpty' : false
+	},{
+		'name' : 'display',
+		'allowEmpty' : false
 	}]
 }
 
