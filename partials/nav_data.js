@@ -6,7 +6,7 @@ module.exports = {
 		},{
 			"href" : "maps",
 			"iconClass" : "map",
-			"displayName" : "Getting Here"
+			"displayName" : "Map"
 		},{
 			"href" : "schedule",
 			"iconClass" : "calendar",
@@ -19,10 +19,6 @@ module.exports = {
 			"href" : "food",
 			"iconClass" : "food",
 			"displayName" : "Food"
-		},{
-			"href" : "learnathon",
-			"iconClass" : "book",
-			"displayName" : "Learnathon"
 		},{
 			"href" : "faq",
 			"iconClass" : "question",

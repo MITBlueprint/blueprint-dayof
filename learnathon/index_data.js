@@ -25,3 +25,29 @@ var intData = {
 
 module.exports.extData = extData;
 module.exports.intData = intData;
+
+var webCurr = {
+  "description" : "Walk away with your own finished personal website and blog by the end of the day!",
+  "sessions" : [{
+    "name" : 'How the Internet Works + HTML/CSS'
+  },{
+    "name" : 'Beginning Javascript/JQuery'
+  },{
+    "name" : 'Intro to Backend with Firebase'
+  },{
+    "name" : 'Flex session + Lightning Talks'
+  }]
+}
+
+var iosCurr = {
+  "description" : "iOS: Learn to make your own iOS app by building a Pokemon clone and notes app in Swift!",
+  "sessions" : [{
+    "name" : "Gotta Code 'Em All (Build your own Pokemon clone in Swift)"
+  },{
+    "name" : 'Beginning Swift & Xcode Tutorial'
+  },{
+    "name" : 'Intermediate iOS App Development'
+  },{
+    "name" : 'Flex session + Lightning Talks'
+  }]
+}
