@@ -21,21 +21,13 @@ var intData = {
   },
   wifi : 'MIT GUEST',
   importantLinks : [{
-    'href' : "http://q.hackmit.org",
+    'href' : "http://go.hackmit.org/queue",
     'icon' : 'help',
     'content' : 'Mentor Queue'
   },{
-    'href' : "//go.hackmit.org/helpdesk",
-    'icon' : 'comment',
-    'content' : 'HackMIT Helpdesk'
-  },{
-    'href' : "//apis.hackmit.org",
-    'icon' : 'settings',
-    'content' : 'API Directory'
-  },{
-    'href' : "//go.hackmit.org/submit",
+    'href' : "./conduct.pdf",
     'icon' : 'legal',
-    'content' : 'Submit project'    
+    'content' : 'Code of Conduct'    
   }],
   socialMedias : [{
     'href' : "//facebook.com/mitblueprint",
