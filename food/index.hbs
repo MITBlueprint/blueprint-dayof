@@ -25,12 +25,34 @@
 
 
 {{> banner context=bannerContext }}
-
 <div class="main width-limiter message-center">
   <div class="ui message">
     <p>
       We’ll be providing breakfast and lunch on Saturday and breakfast, lunch, and dinner on Sunday. You’re free to pick up your meal and hang out in the lobby of Stata, but please don’t take your food into the lecture halls!
     </p>
+  </div>
+</div>
+
+<div class="main">
+  <div class="ui stackable two column page grid">
+    {{#each events}}
+    <div class="column">
+      <div class="ui header">
+        {{@key}}
+      </div>
+      <table class="ui table segment">
+        <tbody>
+          {{#each this}}
+          <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.time}}</td>
+            <td>{{this.description}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+    {{/each}}
   </div>
 </div>
 

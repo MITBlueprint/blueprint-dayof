@@ -1,6 +1,7 @@
 var extData = {
 	'navContext' : 'partials/nav_data.js',
-	'gaContext' : 'partials/ga_data.js'
+	'gaContext' : 'partials/ga_data.js',
+  'events' : 'gsparse_output_data/food.js'
 }
 
 var helpers = require('helpers');
