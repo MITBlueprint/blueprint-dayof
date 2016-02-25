@@ -20,11 +20,11 @@ var requestInfo = {
 		'groupInfo' : {
 			'groups' : [{
 				'key' : 'Learnathon',
-				'columns' : 5,
+				'groupNum' : 5,
 				'options' : scheduleOptions
 			},{
 				'key' : 'Hackathon',
-				'columns' : 5,
+				'groupNum' : 5,
 				'options' : scheduleOptions
 			}]
 		}

@@ -100,37 +100,52 @@ function processResponse(items, options) {
 	if (typeof groupInfo !== 'undefined') {
 		var processedData = {};
 		var groups = groupInfo.groups;
-		var columnIndex = 0;
-		groups.forEach(function(group){
-			var groupKey = group.key;
-			var numColumns = group.columns;
-			var newItems = [];
-			var columns = [];
-			items.forEach( function(item, index){
-				if (index == 0) {
-					//Extract column info
-					Object.keys(item).forEach(function(columnKey, i){
-						if (i >= columnIndex && i < columnIndex + numColumns) {
-							columns.push(columnKey)
-						}
-					});
-					columnIndex += numColumns;
-				} else {
-					var newItem = {};
-					var i = 0;
-					columns.forEach(function(key){
-						var value = item[key];
-						if (typeof value == 'undefined') {
-							newItem[key] = '';
-						} else {
-							newItem[key] = item[key];
-						}
-					});
-					newItems.push(newItem);
-				}
+		var direction = groupInfo.direction;
+		if (typeof direction == 'undefined') {
+			var columnIndex = 0;
+			groups.forEach(function(group){
+				var groupKey = group.key;
+				var numColumns = group.groupNum;
+				var newItems = [];
+				var columns = [];
+				items.forEach( function(item, index){
+					if (index == 0) {
+						//Extract column info
+						Object.keys(item).forEach(function(columnKey, i){
+							if (i >= columnIndex && i < columnIndex + numColumns) {
+								columns.push(columnKey)
+							}
+						});
+						columnIndex += numColumns;
+					} else {
+						var newItem = {};
+						var i = 0;
+						columns.forEach(function(key){
+							var value = item[key];
+							if (typeof value == 'undefined') {
+								newItem[key] = '';
+							} else {
+								newItem[key] = item[key];
+							}
+						});
+						newItems.push(newItem);
+					}
+				});
+				processedData[groupKey] = processResponse(newItems, group.options);
 			});
-			processedData[groupKey] = processResponse(newItems, group.options);
-		});
+		} else {
+			var rowIndex = 0;
+			groups.forEach(function(group){
+				var startIndex = rowIndex;
+				var newItems = [];
+				var groupKey = group.key;
+				while (rowIndex - startIndex < group.groupNum && rowIndex < items.length) {
+					newItems.push(items[rowIndex]);
+					rowIndex++;
+				}
+				processedData[groupKey] = processResponse(newItems, group.options)
+			});
+		}
 		return processedData;
 	} else {
 		var newItems = [];

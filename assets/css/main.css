@@ -31,14 +31,14 @@ a {
   float: left;
 }
 
-.hacksquare {
-  outline: 2px solid black;
-  outline-offset: 2px;
+.blueprint-square {
+  outline: 4px solid #0E95D4;
   float: left;
   display: inline-block !important;
-  margin-right: .5em !important ;
-  height: 1em;
-  width: 1em;
+  margin-right: .5em !important;
+  height: 1.0em;
+  width: 1.0em;
+  background: #0E95D4;
 }
 
 #home iframe
