@@ -3,19 +3,19 @@ module.exports = {
 		{
 			"name": "Breakfast",
 			"time": "9:00 AM",
-			"description": "Costco breakfast, muffins, etc"
+			"description": "Breakfast Muffins"
 		},
 		{
 			"name": "Lunch",
 			"time": "12:30 PM",
-			"description": "Bertuccis Lunch (Pizza)"
+			"description": "Pizza from Bertucci's"
 		}
 	],
 	"Hackathon": [
 		{
 			"name": "Breakfast",
 			"time": "7:30 AM",
-			"description": "Costco breakfast, muffins, etc"
+			"description": "Breakfast Muffins"
 		},
 		{
 			"name": "Snacks",
@@ -25,17 +25,17 @@ module.exports = {
 		{
 			"name": "Special Snack",
 			"time": "10:30 AM",
-			"description": "Doughnuts from Ohlins Doughnuts or Union Square Doughnuts?"
+			"description": "Doughnuts from Ohlin's Bakery"
 		},
 		{
 			"name": "Lunch",
 			"time": "12:00 PM",
-			"description": "Sebastians Dinner - Sandwich Board (Sandwich Board)"
+			"description": "Sandwiches from Sebastian's"
 		},
 		{
 			"name": "Dinner",
 			"time": "5:00 PM",
-			"description": "Bertuccis pasta"
+			"description": "Assorted pasta from Bertucci's"
 		}
 	]
 }
