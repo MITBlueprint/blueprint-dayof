@@ -46,7 +46,7 @@ module.exports = {
 			"start": "1:30 PM",
 			"end": "2:30 PM",
 			"event": "Tech talks",
-			"location": "32-141, 144, 155"
+			"location": "32-123, 141, 155"
 		},
 		{
 			"start": "2:30 PM",
