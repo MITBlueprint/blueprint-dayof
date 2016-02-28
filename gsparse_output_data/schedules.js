@@ -111,8 +111,14 @@ module.exports = {
 			"location": ""
 		},
 		{
-			"start": "1:00 PM",
+			"start": "12:30 PM",
 			"end": "1:30 PM",
+			"event": "Tech Talk",
+			"location": "32-123"
+		},
+		{
+			"start": "1:30 AM",
+			"end": "2:00 PM",
 			"event": "Resonance performance",
 			"location": ""
 		},
