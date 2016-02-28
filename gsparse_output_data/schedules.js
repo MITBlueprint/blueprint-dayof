@@ -46,7 +46,7 @@ module.exports = {
 			"start": "1:30 PM",
 			"end": "2:30 PM",
 			"event": "Tech talks",
-			"location": "32-141, 144, 155"
+			"location": "32-123, 141, 155"
 		},
 		{
 			"start": "2:30 PM",
@@ -111,8 +111,14 @@ module.exports = {
 			"location": ""
 		},
 		{
-			"start": "1:00 PM",
+			"start": "12:30 PM",
 			"end": "1:30 PM",
+			"event": "Tech Talk",
+			"location": "32-123"
+		},
+		{
+			"start": "1:30 AM",
+			"end": "2:00 PM",
 			"event": "Resonance performance",
 			"location": ""
 		},
