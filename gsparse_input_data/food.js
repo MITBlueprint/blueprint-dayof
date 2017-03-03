@@ -15,7 +15,7 @@ var foodOptions = {
 }
 
 var requestInfo = {
-	'gid' : '1wCkiljdDKA5xKw0-FHyIULbIorb9tucDZOROw8wXEGU',
+	'gid' : '1IZfBX1up4HXBjGX_Wup3I1Scsp-kSoCPFegcJk2FUM0',
 	'options' : {
 		'groupInfo' : {
 			'groups' : [{

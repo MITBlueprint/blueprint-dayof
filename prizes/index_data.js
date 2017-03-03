@@ -3,7 +3,6 @@ var extData = {
 	'gaContext' : 'partials/ga_data.js',
   'prizeInfo' : 'gsparse_output_data/prizes.js',
   'otherPrizes' : 'prizes/otherPrizes.js'
-
 }
 
 var helpers = require('helpers');

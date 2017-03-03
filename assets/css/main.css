@@ -3,7 +3,7 @@ input,
 .ui.input input,
 button,
 textarea {
-  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
 a {
@@ -12,7 +12,7 @@ a {
 
 .montserrat,
 .montserrat.bold {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rokkitt', sans-serif;
 }
 
 .montserrat.bold{
@@ -20,7 +20,7 @@ a {
 }
 
 .lato {
-  font-family: 'Lato', 'Helvetica Neue Light', 'Helvetica', sans-serif !important;
+  font-family: 'Roboto', 'Helvetica Neue Light', 'Helvetica', sans-serif !important;
 }
 
 .ui.message ul.list li:before {
@@ -161,6 +161,6 @@ div div#current-events-container.invisible {
   display: none !important;
 }
 
-.bprint-yellow { background-color: #FFD946 !important;}
-.bprint-lightblue { background-color: #0E95D4 !important;}
-.bprint-darkblue { background-color: #063B54 !important;}
+.bprint-yellow { background-color: #FDE74C !important;}
+.bprint-lightblue { background-color: #11AFFF !important;}
+.bprint-darkblue { background-color: #217ACC !important;}
