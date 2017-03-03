@@ -15,16 +15,16 @@ var scheduleOptions = {
 }
 
 var requestInfo = {
-	'gid' : '19NAcIAJ0wCLQ-l7Pzp0i63wpSPCl0pL-rtsuWvfIbMI',
+	'gid' : '1Z8SOcQdQcmBM-i_5pc76MZQHvwV_JLxMo03uFbQTNsU',
 	'options' : {
 		'groupInfo' : {
 			'groups' : [{
 				'key' : 'Learnathon',
-				'groupNum' : 5,
+				'groupNum' : 4,
 				'options' : scheduleOptions
 			},{
 				'key' : 'Hackathon',
-				'groupNum' : 5,
+				'groupNum' : 4,
 				'options' : scheduleOptions
 			}]
 		}

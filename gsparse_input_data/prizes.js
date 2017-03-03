@@ -18,7 +18,7 @@ var prizeOptions = {
 }
 
 var requestInfo = {
-	'gid' : '1VZBvhq-4vkq_W6qzTsay_WnRcbui64KXtDX5lC6DWGo',
+	'gid' : '1TvNTJ5bzvtfTAvbphETB7euRponER5KmiDIeboXLyug',
 	'options' : {
 		'groupInfo' : {
 			'groups' : [{

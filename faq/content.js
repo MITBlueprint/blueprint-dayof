@@ -1,7 +1,7 @@
 module.exports = [
 	{
 		"title": "I came late / don’t know where to go!",
-		"content": "Come to our Help Desk outside 32-123 and we’ll get you up to speed!"
+		"content": "Come to our Help Desk outside Lobdell and we’ll get you up to speed!"
 	},
 	{
 		"title": "What if I don’t have a team?",
