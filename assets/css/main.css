@@ -61,8 +61,8 @@ a {
 }
 
 #banner .content{
-  text-transform: uppercase;
-  font-size: 3em;
+  font-family: "Rokkitt", 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 4em;
     color: white;
     font-weight: 300;
   text-align: center;
@@ -161,6 +161,6 @@ div div#current-events-container.invisible {
   display: none !important;
 }
 
-.bprint-yellow { background-color: #FDE74C !important;}
+.bprint-yellow { background-color: #6DCC36 !important;}
 .bprint-lightblue { background-color: #11AFFF !important;}
 .bprint-darkblue { background-color: #217ACC !important;}
