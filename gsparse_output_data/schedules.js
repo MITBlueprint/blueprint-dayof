@@ -75,13 +75,25 @@ module.exports = {
 		{
 			"start": "3:30 PM",
 			"end": "4:30 PM",
-			"event": "Tech Talks",
-			"location": "Lobdell and La Sala"
+			"event": "Natural Language Processing in Python",
+			"location": "La Sala"
+		},
+		{
+			"start": "3:30 PM",
+			"end": "4:00 PM",
+			"event": "Practical Security",
+			"location": "Lobdell"
+		},
+		{
+			"start": "4:00 PM",
+			"end": "4:30 PM",
+			"event": "Machine Learning for Vision",
+			"location": "Lobdell"
 		},
 		{
 			"start": "4:30 PM",
 			"end": "4:45 PM",
-			"event": "Closing talk & go home",
+			"event": "Closing talk",
 			"location": "Lobdell"
 		}
 	],
@@ -107,14 +119,14 @@ module.exports = {
 		{
 			"start": "8:00 AM",
 			"end": "8:30 AM",
-			"event": "Mentor orientation",
-			"location": "20 Chimneys"
+			"event": "Mentor orientation & breakfast",
+			"location": "West Lounge (outside La Sala)"
 		},
 		{
 			"start": "8:30 AM",
 			"end": "9:00 AM",
 			"event": "Team formation",
-			"location": "Lobdell"
+			"location": "Lobdell (upper level)"
 		},
 		{
 			"start": "12:30 PM",
@@ -126,7 +138,7 @@ module.exports = {
 			"start": "2:30 PM",
 			"end": "3:00 PM",
 			"event": "Campus excursion",
-			"location": "20 Chimneys"
+			"location": "Lobdell (upper level)"
 		},
 		{
 			"start": "5:30 PM",
