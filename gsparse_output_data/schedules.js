@@ -31,21 +31,21 @@ module.exports = {
 			"location": "Lobdell"
 		},
 		{
-			"start": "11:30 AM",
-			"end": "12:30 PM",
+			"start": "11:30 PM",
+			"end": "12:30 AM",
+			"event": "Lunch",
+			"location": "Lobdell"
+		},
+		{
+			"start": "12:30 AM",
+			"end": "1:30 PM",
 			"event": "Web workshop #2",
 			"location": "La Sala"
 		},
 		{
-			"start": "11:30 AM",
-			"end": "12:30 PM",
-			"event": "iOS workshop #2",
-			"location": "Lobdell"
-		},
-		{
-			"start": "12:30 PM",
+			"start": "12:30 AM",
 			"end": "1:30 PM",
-			"event": "Lunch",
+			"event": "iOS workshop #2",
 			"location": "Lobdell"
 		},
 		{
