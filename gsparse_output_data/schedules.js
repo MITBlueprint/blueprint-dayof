@@ -150,7 +150,7 @@ module.exports = {
 			"start": "6:00 PM",
 			"end": "7:00 PM",
 			"event": "Judging",
-			"location": "Lobdell and La Sala"
+			"location": "Lobdell"
 		},
 		{
 			"start": "7:00 PM",

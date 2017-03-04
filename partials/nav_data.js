@@ -25,6 +25,6 @@ module.exports = {
 			"displayName" : "FAQs"
 		}
 	],
-	'logo_name' : 'BLUEPRINT',
+	'logo_name' : 'Blueprint',
 	'logo_href' : '//blueprint.hackmit.org/'
 };

@@ -11,7 +11,7 @@ var intData = {
     'applicationDirectory' : APP_DIR
   },
   bannerContext : {
-  	'bannerName' : 'WELCOME TO BLUEPRINT'
+  	'bannerName' : 'Welcome to Blueprint'
   },
   semanticsContext : {
   	'applicationDirectory' : APP_DIR
