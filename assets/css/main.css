@@ -35,9 +35,10 @@ a {
   outline: 2px solid #0E95D4;
   float: left;
   display: inline-block !important;
+  margin-top: .1em !important;
   margin-right: .5em !important;
-  height: 1.em;
-  width: 1.0em;
+  height: .75em !important;
+  width: .5em !important;
   outline-offset: 2px;
 }
 
