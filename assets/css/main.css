@@ -10,6 +10,7 @@ a {
   text-decoration: none !important;
 }
 
+
 .montserrat,
 .montserrat.bold {
   font-family: 'Rokkitt', sans-serif;
@@ -64,7 +65,7 @@ a {
 #banner .content{
   font-family: "Rokkitt", 'Helvetica Neue', 'Helvetica', sans-serif;
   font-size: 4em;
-    color: white;
+    color: #34CAE5;
     font-weight: 300;
   text-align: center;
   padding: 1em 0;
@@ -164,7 +165,7 @@ div div#current-events-container.invisible {
 
 .bprint-orange { background-color: #FE875C !important;}
 .bprint-lightblue { background-color: #11AFFF !important;}
-.bprint-bluesl { background-color: #34CAE5 !important;}
+.bprint-blue { background-color: #34CAE5 !important;}
 
 .no-margin {
   margin: 0 !important;
