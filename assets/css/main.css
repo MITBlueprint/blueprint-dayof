@@ -162,9 +162,9 @@ div div#current-events-container.invisible {
   display: none !important;
 }
 
-.bprint-yellow { background-color: #6DCC36 !important;}
+.bprint-orange { background-color: #FE875C !important;}
 .bprint-lightblue { background-color: #11AFFF !important;}
-.bprint-darkblue { background-color: #217ACC !important;}
+.bprint-bluesl { background-color: #34CAE5 !important;}
 
 .no-margin {
   margin: 0 !important;
